@@ -1,0 +1,109 @@
+html,
+body,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  border: 0;
+}
+a {
+  text-decoration: none;
+}
+@media screen and (orientation: portrait) {
+  /*竖屏 css*/
+  .block {
+    display: none;
+  }
+}
+@media screen and (orientation: landscape) {
+  /*横屏 css*/
+  .block {
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+  }
+  .block span {
+    display: block;
+  }
+  .block img {
+    margin: 12% 0 2% 0;
+    width: 40%;
+  }
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Miscrosoft Yahei', '微软雅黑';
+  font-size: 15px;
+  color: #fff;
+  background-color: #000;
+  overflow: hidden;
+}
+.loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #000;
+}
+.loading .arrow {
+  margin-top: 40vh;
+}
+.loading .progress {
+  border-radius: 1.5px;
+  width: 30vw;
+  max-width: 500px;
+  min-width: 280px;
+  height: 2px;
+  background-color: #fff;
+  margin: 20px auto;
+  line-height: 0;
+  font-size: 0;
+  -webkit-box-shadow: 0px 0px 25px #fff;
+  box-shadow: 0px 0px 25px #fff;
+}
+.loading .progress div {
+  background-color: #912690;
+  height: 2px;
+  border-radius: 1.5px;
+  margin: 0 auto;
+  width: 0;
+}
+.nav1 {
+  width: 16px;
+  height: 14px;
+  background-image: url('../asset/img/icon/triangle-border.png');
+}
